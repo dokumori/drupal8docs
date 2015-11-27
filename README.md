@@ -1,6 +1,6 @@
 # Configuration for Drupal 8 documentation with diagrams
 
-Drupal has fully embraced Object-Oriented Programming since version 8. But I don't know the internals well so thought having class inheritance diagrams would come handy. However, [the official Drupal API documentation|https://www.drupal.org/project/api] does not come with such diagrams so I decided to generate them myself. The result can be seen at http://drupal8docs.diasporan.net. It isn't complex, but there are various switches that I had to press to generate the documentation in the way I wanted e.g. in HTML, with code excerpts, custom search and Google Analytics tracking code. I'm sharing the config with the hope that it may help others who would like to generate the doc themselves.
+Drupal has fully embraced Object-Oriented Programming since version 8. But I don't know the internals well so thought having class inheritance diagrams would come handy. However, [the official Drupal API documentation](https://www.drupal.org/project/api] does not come with such diagrams so I decided to generate them myself. The result can be seen at http://drupal8docs.diasporan.net. It isn't complex, but there are various switches that I had to press to generate the documentation in the way I wanted e.g. in HTML, with code excerpts, custom search and Google Analytics tracking code. I'm sharing the config with the hope that it may help others who would like to generate the doc themselves.
 
 ## Prerequisites
 ### Software applications
