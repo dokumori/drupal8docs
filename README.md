@@ -4,10 +4,10 @@ Drupal has fully embraced Object-Oriented Programming since version 8. But I don
 
 ## Prerequisites
 ### Software applications
-You need to install Doxygen and Graphviz to generate the documentation and diagrams. Detailed instructions are found [here|https://www.stack.nl/~dimitri/doxygen/manual/install.html].
+You need to install Doxygen and Graphviz to generate the documentation and diagrams. Detailed instructions are found [here](https://www.stack.nl/~dimitri/doxygen/manual/install.html).
 
 I simply ran:
-```
+```bash
 sudo apt-get install doxygen graphvis
 ```
 to install them on my Ubuntu server. Note the Doxygen package for Ubuntu 14.04 does not come with files required for external search feature. If you want it, you need to install Doxygen manually.
@@ -36,9 +36,9 @@ doxygen -w html header.html footer.html stylesheet.css [config file name]
 ```
 
 ### Search functionality
-I tried to get [Doxygen's search features|https://www.stack.nl/~dimitri/doxygen/manual/searching.html] working, but I encountered some issues:
+I tried to get [Doxygen's search features](https://www.stack.nl/~dimitri/doxygen/manual/searching.html) working, but I encountered some issues:
 * Client side searching didn't work. I guess the volume of the documentation was too large for it
-* Server side searching with external indexing didn't work out-of-box on Ubuntu 14.04 because ['doxysearch.cgi' and doxyindexer didn't come in the [package|http://packages.ubuntu.com/trusty/amd64/doxygen/filelist]
+* Server side searching with external indexing didn't work out-of-box on Ubuntu 14.04 because [```doxysearch.cgi``` and ```doxyindexer``` didn't come in the package](http://packages.ubuntu.com/trusty/amd64/doxygen/filelist)
 * Even after I reinstalled Doxygen manually, the search results were only returned in json (found no instruction on how to convert it into a consumable format without extensive works to theme it)
 
 ...so in the end I looked to Google and simply embedded a custom search form through the header template (custom_header.html). You can set one up for free at https://cse.google.co.uk
