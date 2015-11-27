@@ -52,6 +52,7 @@ Generating the documentation is very easy althoug it takes quite a while because
 doxygen [config file name] 
 ```
 If you don't have the right permission to the output directory specified in the doxygen config file, it will fail. Adjust the directory permissions or run with ```sudo```.
+If you want to regenerate the documentation, first remove the directory containing the output, which is set to ```[output dir]/html``` by default.
 
 
 ## Hosting the documentation
